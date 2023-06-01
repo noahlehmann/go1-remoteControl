@@ -1,0 +1,17 @@
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    command:
+      - "python app.py"
+    ports:
+      - "5000:5000"
+  frontend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+  # proxy:
