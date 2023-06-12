@@ -5,7 +5,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     command:
-      - "python app.py"
+      - "app.py"
     ports:
       - "5000:5000"
   frontend:

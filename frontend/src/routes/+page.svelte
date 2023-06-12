@@ -90,7 +90,6 @@
         socket = io('http://localhost:5000'); // Replace with your server URL
         socket.on('connect', function() {
             socketConnected = true;
-            socket.emit('my event', {data: 'I\'m connected!'});
         });
 
         return () => {

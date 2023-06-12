@@ -6,7 +6,7 @@ import struct
 app = Flask(__name__)
 app.config['MQTT_BROKER_URL'] = "rocky.hof-university.de"
 app.config['MQTT_BROKER_PORT'] = 1883
-mqtt_client = Mqtt(app)
+mqtt_client = Mqtt(app, connect_async=True)
 mqtt_client.publish("controller/action", "walk", qos=2)
 socketio = SocketIO(app, cors_allowed_origins='*')
 
