@@ -12,6 +12,7 @@
 		"@fontsource/fira-mono": "^4.5.10",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-static": "^2.0.2",
 		"@sveltejs/kit": "^1.5.0",
 		"@types/cookie": "^0.5.1",
 		"svelte": "^3.54.0",
@@ -22,6 +23,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"socket.io-client": "^4.6.2"
+		"@fontsource/roboto": "^5.0.2",
+		"socket.io-client": "^4.6.2",
+		"svelte-material-icons": "^3.0.4"
 	}
 }

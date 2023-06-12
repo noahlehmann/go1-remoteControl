@@ -10,8 +10,7 @@ services:
       - "5000:5000"
   frontend:
     build:
-      context: ./backend
+      context: ./frontend
       dockerfile: Dockerfile
     ports:
       - "80:80"
-  # proxy:

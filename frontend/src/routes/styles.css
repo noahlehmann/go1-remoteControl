@@ -1,0 +1,9 @@
+@import "@fontsource/roboto";
+
+:root {
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	height: 100vh;
+}
